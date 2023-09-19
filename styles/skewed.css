@@ -1,0 +1,79 @@
+.skewed-header {
+    height: 350px;
+    position: relative;
+}
+
+.skewed-header > .header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-repeat:no-repeat;
+    transform: skewY(-6deg);
+    transform-origin: left;
+    filter: brightness(70%);
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5);
+    
+}
+
+.skewed-header > .skewed-header-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: row;
+    align-items: baseline;
+}
+
+.skewed-header > .skewed-header-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.skewed-header > .skewed-header-wrapper > .skewed-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+}
+
+.skewed-header > .skewed-header-wrapper > .skewed-header-content > .heading-wrapper {
+    padding: 10px;
+    width: 175px;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2px;
+    background-color: var(--hoverColor);
+    color: var(--backgroundColor);
+    text-align: center;
+}
+
+.skewed-header > .skewed-header-wrapper > .skewed-header-content > .heading-wrapper h1 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.skewed-header-content > .links-wrapper > .nav-link a {
+    font-size: 1rem;
+}
+
+.company-data-container > .company-name {
+    display: grid;
+    justify-content: center;
+}
+.company-name h3 {
+    color:var(--hoverColor)
+}
+.company-name h5 {
+    margin-bottom: 0;
+}
+
+.company-data-container > .company-data-details {
+    display: grid;
+    justify-content: center;
+    color: var(--backgroundColor)
+}
+
+

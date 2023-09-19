@@ -1,0 +1,210 @@
+/* home-page */
+/* 1st */
+.hero-section {
+    background-image: url(../images/background/shutterstock_531332962.jpg);
+    padding: 100px;
+    height: 350px;
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+.hero-section > .hero-info > .contact-info a {
+    background-color: var(--hoverColor);
+    width: 180px;
+    padding: 15px 20px;
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 3px;
+    text-decoration: none;
+    color: var(--backgroundColor)
+}
+.hero-section > .hero-info > .contact-info { 
+    margin-bottom: 80px;
+} 
+
+.hero-section > .hero-info > .company-info a {
+    background-color: var(--backgroundColor);
+    width: 112px;
+    padding: 15px 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 3px;
+    text-decoration: none;
+    color: var(--hoverColor);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: var(--backgroundColor);
+    border-top: 3px ridge var(--hoverColor);
+    border-bottom: 1px solid var(--hoverColor);
+    align-items: center;
+}
+
+/* 2nd */
+.type-of-service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    margin-right: 100px;
+    margin-left: -100px;
+    text-align: center;
+    font-family: 'Roboto Slab', sans-serif;
+}
+.type-of-service a {
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #cea135;
+    padding: 15px 20px 15px 20px;
+    border-radius: 8px;
+    color: var(--backgroundColor);
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.type-of-service a:hover {
+    text-transform: uppercase;
+    background-color: var(--backgroundColor);
+    padding: 15px 20px 15px 20px;
+    color: var(--hoverColor);
+    font-weight: 700;
+}
+
+.content {
+    border-radius: 8px;
+    height: 250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+  
+.card-container {
+    background-color: transparent;
+    width: 370px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+  
+.card-container-content {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+  
+.card-container-content > .card-front {
+    color: var(--hoverColor);
+    text-transform: uppercase;
+}
+
+.card-container:hover .card-container-content {
+    transform: rotateY(180deg);
+}
+  
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left; 
+}
+  
+.card-back {
+    background-color: transparent;
+    color: var(--hoverColor);
+    transform: rotateY(180deg);
+    line-height: 2rem;
+}
+  
+
+/* contact-page */
+.page-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.contact-grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 1000px;
+    grid-gap: 100px
+}
+
+.contact-grid-wrapper > .contact-details-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-grid-wrapper > .contact-details-container > .company-details-wrapper {
+    display: flex;
+    justify-content: space-between;
+    color: var(--backgroundColor3);
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: right;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+/* company-info-page */
+.company-details-wrapper i {
+    font-size: 1.25rem;
+    color: var(--hoverColor);
+}
+
+.company-details-wrapper a {
+    text-decoration: none;
+    color: var(--backgroundColor3);
+}
+
+.contact-details-container > .logo {
+    margin-bottom: 20px;
+}
+
+.contact-details-container > .logo img{
+   width: 100%;
+   height: 100%;
+}
+
+/* services-page */
+
+.services-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.services-container > .services-wrapper {
+    padding: 20px 30px;
+    box-shadow: 0px 5px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.services-container > .services-wrapper h1 {
+    color:var(--hoverColor);
+}
+
+.services-container > .services-wrapper > .info {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    line-height: 35px;
+    color:var(--backgroundColor3)
+}
